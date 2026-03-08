@@ -3,7 +3,7 @@ import { useAuthProps, User } from "./types";
 import { api } from "@/modules/services/api.service";
 import { toast } from "react-toastify";
 
-export const useAuth = create<useAuthProps>((set) => ({
+export const useAuth = create<useAuthProps>(() => ({
   user: {} as User,
   handleLogin: async (data, navigate) => {
     try {

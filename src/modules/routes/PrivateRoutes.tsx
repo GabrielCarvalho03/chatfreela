@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import { Loader2 } from "lucide-react";
 
 export function PrivateRoutes() {
-  const { user, handleGetUser } = useAuth();
+  const { handleGetUser } = useAuth();
   const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
